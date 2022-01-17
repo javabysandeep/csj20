@@ -1,0 +1,22 @@
+Variable : It is a name give to a memory location address
+Use of variable: To access the data stored or store the data at the memory location
+How to use it? int number = 50; // In this number is variable
+
+Datatype:
+    1. It specifies type of data that is being stored in variable
+    2. It specifies the memory requirement
+    3. It specifies the range of allowed values
+
+Different data types available in java
+1. To store whole numbers
+    byte --- 1 byte -- range -128 to 127
+    short -- 2 bytes  range -32768 to 32767
+    int -- 4 bytes range  -2147148
+    long  -- 8 bytes
+2. To store decimal or floating numbers
+    float -- 4 bytes
+    double  -- 8 bytes
+3. To store character data
+    char -- 2 bytes
+4. To store boolean value
+    boolean -- 1 byte , true, false
