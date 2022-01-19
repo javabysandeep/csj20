@@ -37,11 +37,40 @@ Types of typecasting:
         - This has to be done by developer.
         - There might be data loss.
 
+Arithmetic Operators:
++, -, *, /, %
+
+1. + operator:
+    - string concatenation operator: when one of the operand is of String type.
+    - mathematical addition: when both the operands are of number type.
+
+Expression evaluation: left to write by following BODMAS
+
+Arithmetic Operators are not applicable for boolean data type
 
 
+2. Comparison or Relational operators: >, <, >=, <=,==, !=
+byte, short, int, long, float, double, char: >, <, >=, <=,==, !=
+boolean data type : ==, !=
+Output: boolean value
+
+3. Assignment operator :
+= which is used to assign RHS side to lhs.
+int a = 50;
+
+LHS must be a variable.
+RHS can be value, variable, expression, method call
+
+System.out.println(4=5);//CTE
+System.out.println(a=5);//5
 
 
+4. Logical Operators
+    &, &&, |, ||, ^, !,
+  For boolean what is applicable: &, &&,|,||, !,
 
+    There is no keyword like this AND, OR, XOR, NOT, NOR
 
-
-
+Unary Operators: no. operand is only one
+Binary Operators: no. operands are two
+Ternary Operators: no. of operands are three
