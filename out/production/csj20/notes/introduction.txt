@@ -67,10 +67,53 @@ System.out.println(a=5);//5
 
 4. Logical Operators
     &, &&, |, ||, ^, !,
-  For boolean what is applicable: &, &&,|,||, !,
+  For boolean what is applicable: &, &&,|,||, !,^
 
-    There is no keyword like this AND, OR, XOR, NOT, NOR
+All logical operators are applicable for boolean.
+Number type: &, |, ^
+There is no keyword like this AND, OR, XOR, NOT, NOR
 
 Unary Operators: no. operand is only one
 Binary Operators: no. operands are two
 Ternary Operators: no. of operands are three
+
+
+Difference between & , &&:
+& is both logical as well as bitwise operator
+& evaluates all the conditions and at last gives ouput
+
+&& is truly logical. It is applicable for boolean
+It returns the output when we get the first false.
+
+
+| is both logical and bitwise operator
+| evalutes all the conditions and at last gives ouput
+
+|| is trully logical. It is applicable for boolean
+It returns the output when we get the first true
+
+----------------------------------------------------------
+
+Pre-Increment and Post-Increment ++
+Pre-Decrement and Post-Decrement --
+
+These are unary operators.
+
+Pre Increment will increase the value by 1 and then it will be used for assignment or for any other operation
+
+Pre Decrement will decrease the value by 1, and then it will be used for assignment or for any other operation
+
+Post Increment will assign or do the operation then increase the value by 1
+
+Post Decrement will assign or do the operation then decrease the value by 1
+
+-----------------------------
+
+Bitwise operators
+&,|,^, <<, >>, >>>, ~
+
+
+
+
+
+
