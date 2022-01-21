@@ -79,7 +79,7 @@ Ternary Operators: no. of operands are three
 
 
 Difference between & , &&:
-& is both logical as well as bitwise operator
+& is both logical and bitwise operator
 & evaluates all the conditions and at last gives ouput
 
 && is truly logical. It is applicable for boolean
@@ -111,6 +111,48 @@ Post Decrement will assign or do the operation then decrease the value by 1
 
 Bitwise operators
 &,|,^, <<, >>, >>>, ~
+
+
+Ternary Operator: conditional operator
+- Ternary operator works on three operands
+- It takes input as a boolean type data.
+- Based on the input it returns the value.
+- syntax: (op1) ? (op2) :(op3)
+- This is the only ternary operator in java
+
+As part of condition (operand1):
+- We can provide direct boolean value true or false.
+- We can write an expression which results into boolean
+- We can call a method which returns boolean value.
+
+Arithmetic operations resultant output:
+
+byte, short, int, char [+, -, *, /, %] byte, short, int, char ---> int
+
+byte, short, int, char, long [+, -, *, /, %] byte, short, int, char, long ---> long
+
+byte, short, int, char, long,float [+, -, *, /, %] byte, short, int, char, long,float ---> float
+
+byte, short, int, char, long,float, double [+, -, *, /, %] byte, short, int, char, long,float, double ---> double
+
+
+Identifier:
+
+It is a name given to a java method, variable, class, package, interfaces, abstract classes
+
+Rules:
+1. Set of characters include, A-z, a-z, 0-9, _, $
+2. Identifier should not start with digit,
+    e.g. int 1number; //CTE
+3. Keywords or reserved words cannot be used as identifier.
+        e.g. int int = 10;//CTE
+        // public, static void, byte, short, int, long, float, double, char, boolean, class...
+4.
+
+
+
+
+
 
 
 
