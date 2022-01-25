@@ -141,7 +141,7 @@ Identifier:
 It is a name given to a java method, variable, class, package, interfaces, abstract classes
 
 Rules:
-1. Set of characters include, A-z, a-z, 0-9, _, $
+1. Set of characters include, A-Z, a-z, 0-9, _, $
 2. Identifier should not start with digit,
     e.g. int 1number; //CTE
 3. Keywords or reserved words cannot be used as identifier.
@@ -157,7 +157,6 @@ Rules:
         - variables, methods, packages
         - e.g. void checkEligibility(){}
         - e.g. int studentRollNumber = 1;
-
 
 
 

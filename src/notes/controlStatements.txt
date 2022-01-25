@@ -1,0 +1,24 @@
+Topic: Control Statements
+Date: Tuesday 25 Jan, 2022
+
+What are control statements?
+ - control statements helps to decide the flow of execution of the code.
+ - helps in deciding which part of the code to execute, skip, and repeat.
+
+Types control statements:
+1. conditional statements :
+    -They help you to decide which part of the code to execute and
+        skip the code based on some condition(boolean) or some value
+    - if else [condition]
+    - switch [value]
+2. looping statements/ repeat / iterative statements
+  repeat the statements
+    - for [ when no. of iterations are known in advance]
+    - while [ when no. of iterations are not known in advance]
+    - do_ while [ when no. of iterations are not known in advance & want to execute code at least once]
+    - foreach [array and collections]
+3. transfer statements
+    To transfer the control of execution
+    - return [ we can return the value, ]
+    - break
+    - continue
