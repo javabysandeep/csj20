@@ -57,6 +57,47 @@ syntax:
 - we cannot write independent statements in-between if and else otherwise it leads CTE
 
 
+	• controls the flow of execution of the code
+	What are the different types of control statements are there in java ?
+		○ If-else, switch, for, while, do-while, break, continue, return
+	• Invalid : if(23), if("A"), if('A'), if(23*2), if(!5); if(4 & 5)
+	• Valid: if(true), if(false), if(123 > 12), if(5==6), if( (5>60) & (5> 4) ), if(false !=true); if(!true);
+	• If can come independently, else is optional
+Syntax:
+
+if(condition) {
+	// statements--> these will be executed when condition is true
+}
+// rest of the code ; if condition is false
+
+
+	• For every else there must be a matching if block.
+	• We cannot write independent statements in between if and else
+
+	When to use if and when to use switch?
+	Ans.if--- if we are doing comparison operation--> { >, >=, <, <=, !=, ==, &, &&, |, ||, ^} as part of condition evaluation which results into boolean
+	value then always go for if
+
+	If we are performing equality check then it is always recommended to use switch.
+
+	Switch
+	• It is keyword which used to compare a given value across given cases
+	• We are comparing the single value across multiple case labels
+
+switch ( value) {
+	case label: statements;
+			break;
+	default:
+}
+	• Value must be of type [byte, short, int, char, String, enum]
+	• Value cannot be boolean, long, float, double
+	• In Switch, writing case, default, break are optional.
+	• Value and case label data type must be same.
+	• If default is not there, then given value will be compared with given cases if it is matching then that particular case will be executed, and if it is not matching then there will not be anything to execute inside the switch.
+	• If break is not there,
+	then from matching case label all the statements of following cases statement will be executed till there is next break.
+
+
 
 
 

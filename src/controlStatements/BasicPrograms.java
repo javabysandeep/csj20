@@ -5,6 +5,12 @@ public class BasicPrograms {
         System.out.println(isEven(100));
         System.out.println(isPositive(100));
         System.out.println(maxOfThree(100,200,390));
+        System.out.println(isAlphabate('a'));
+        System.out.println('a'+1);
+    }
+
+    private static boolean isAlphabate(char c) {
+        return (c>='A' && c<='Z')||(c>='a' && c<='z');
     }
 
     private static boolean isEven(int number) {
