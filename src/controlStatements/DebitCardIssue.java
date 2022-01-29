@@ -25,5 +25,8 @@ public class DebitCardIssue {
         if (salary > 200000) {
             System.out.println("platinum card");
         }
+        if (true && true) {
+
+        }
     }
 }

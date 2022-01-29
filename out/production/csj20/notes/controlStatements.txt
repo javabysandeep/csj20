@@ -49,7 +49,9 @@ else :
 syntax:
         if(condition){
           // if the cond is true
-        } else {
+        }
+
+        else {
             // if the cond is false
         }
 - we cannot write independent statements in-between if and else otherwise it leads CTE
