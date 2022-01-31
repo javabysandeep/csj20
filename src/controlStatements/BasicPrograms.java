@@ -7,6 +7,9 @@ public class BasicPrograms {
         System.out.println(maxOfThree(100,200,390));
         System.out.println(isAlphabate('a'));
         System.out.println('a'+1);
+
+        char c = '4';
+        System.out.println((c>='A' && c<='Z')||(c>='a' && c<='z'));
     }
 
     private static boolean isAlphabate(char c) {
@@ -42,6 +45,8 @@ public class BasicPrograms {
         /*return (num1 > num2 && num1 > num3)
                 ? num1
                 : (num2 > num1 && num2 > num3) ? num2 : num3;*/
+
+
     }
 
 }

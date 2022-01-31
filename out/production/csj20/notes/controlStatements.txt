@@ -97,7 +97,27 @@ switch ( value) {
 	• If break is not there,
 	then from matching case label all the statements of following cases statement will be executed till there is next break.
 
+--------------------------------------------------
 
+for : it is a keyword which is used to perform repeat task
+
+Syntax: for (initialization; condition; increment/decrement ) {
+        // code to be executed repeatedly
+    }
+    initialization :
+        - it is optional.
+        - this block gets executed only once.
+    condition:
+        - it is also optional but if we don't provide the value  by default it is true
+        and loop continue infinitely
+        - condition can be direct boolean true false
+        - condition can be expression which results into boolean
+        - condition can be a method call which returns boolean
+
+    increment/decrement:
+        - it is also optional.
+        - we write code which increment or decrment value to maintain the counter
+}
 
 
 
