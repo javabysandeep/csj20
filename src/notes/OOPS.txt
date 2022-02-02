@@ -1,0 +1,47 @@
+class and object
+class components
+    - variables
+        - local
+        - instance
+        - static
+        - final
+        - reference
+    - methods
+        - instance
+        - static
+        - default methods
+        - abstract methods
+        - final methods
+    - constructors
+        - default
+        - zero param
+        - param
+    - this keyword
+    - blocks
+        - instance
+        - static
+    - nested class
+        - static nested class
+        - non-static i.e. inner class
+        - local inner class
+        - anonymous class
+OOPS
+    - Access specifiers
+    - Encapsulation
+    - Inheritance
+        - what is it
+        - why to use
+        - how it uses
+        - types
+        - super keyword
+    - Polymorphism
+        - method overloading
+        - method overriding
+    - Abstraction
+        - concrete methods
+        - concrete class
+        - abstract method
+        - interfaces
+            - marker
+            - functional
+            - lambda expression

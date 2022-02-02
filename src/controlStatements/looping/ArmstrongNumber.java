@@ -7,6 +7,7 @@ public class ArmstrongNumber {
                 System.out.println(i);
             }
         }
+        System.out.println(isPalindrome(153) ? "Palindrome" : "Not a palindrome");
     }
 
     private static boolean isArmstrong(int number) {
@@ -15,6 +16,17 @@ public class ArmstrongNumber {
         for (; number > 0; ) {
             int digit = number % 10;
             sum = sum + digit * digit * digit;
+            number = number / 10;
+        }
+        return original == sum;
+    }
+
+    private static boolean isPalindrome(int number) {
+        int original = number;
+        int sum = 0;
+        while (number > 0) {
+            int digit = number % 10;
+            sum = sum * 10 + digit;
             number = number / 10;
         }
         return original == sum;

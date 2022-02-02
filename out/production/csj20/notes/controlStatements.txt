@@ -119,8 +119,32 @@ Syntax: for (initialization; condition; increment/decrement ) {
         - we write code which increment or decrment value to maintain the counter
 }
 
+# while
+    - when we do not the iterations in advance
+    - syntax while (condition){
+            // statements
+        }
+     condition is mandatory.
+     condition:
+            - it is also optional but if we don't provide the value  by default it is true
+            and loop continue infinitely
+            - condition can be direct boolean true false
+            - condition can be expression which results into boolean
+            - condition can be a method call which returns boolean
 
+# break :
+        - it is keyword which is used in either switch or loops
+        - if we use break outside loops or switch then we get CTE.
+        - break takes the control out of the loop and switch.
 
+#continue:
+        - it is keyword which is used in only loops
+        - if we use continue outside loops then we get CTE.
+        - it skips the current iteration and continue from the next iteration.
+
+#return
+        - it is keyword which is used inside the method.
+        - whenever return statements executes inside the method, then rest of the code from method will not be executed.
 
 
 
