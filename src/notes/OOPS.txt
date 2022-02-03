@@ -1,4 +1,35 @@
-class and object
+Primitive variable: A variable which holds a primitive value.
+    int a =30;
+    // a is primitive variable
+    // int is type of value
+    // 30 is value
+
+Reference variable: A variable which holds reference/address of an object.
+    e.g. Product product = new Product();
+        // product : reference variable which holds address of an object of type Product
+        // new Product():  this is object of type of Product
+        // Product: it is type which specifies the type of object
+
+- class:
+    - it is keyword which is used to create a class/ category/ group
+    - class is a blueprint/ template, structure, layout, plan, design, derived data type to create an object
+    - Why do we need? to create obejcts
+    - How to create class: class ClassName {}
+    - With single class we can create any no. of objects.
+
+    class contains
+        - state/attributes/variables/properties/data/info/columns/fields/
+        - behaviour/methods/functions/procedure/routine/implementation/
+
+- Object:
+    - it is an instance of class.
+    - instance is an any memory space allocated.
+    - Object is an memory space allocated for the class type data.
+    - Why do need an object? to store data.
+    - How to create an object?
+        - syntax: ClassName referenceVariableName = new ClassName();
+        - Product product = new Product(); // RHS is an object
+
 class components
     - variables
         - local
