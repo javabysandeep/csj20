@@ -12,8 +12,9 @@ Reference variable: A variable which holds reference/address of an object.
 
 - class:
     - it is keyword which is used to create a class/ category/ group
+    - it is derived from the word classification.
     - class is a blueprint/ template, structure, layout, plan, design, derived data type to create an object
-    - Why do we need? to create obejcts
+    - Why do we need? to create objects
     - How to create class: class ClassName {}
     - With single class we can create any no. of objects.
 
@@ -24,11 +25,50 @@ Reference variable: A variable which holds reference/address of an object.
 - Object:
     - it is an instance of class.
     - instance is an any memory space allocated.
-    - Object is an memory space allocated for the class type data.
+    - Object is a memory space allocated for the class type data.
     - Why do need an object? to store data.
     - How to create an object?
         - syntax: ClassName referenceVariableName = new ClassName();
         - Product product = new Product(); // RHS is an object
+
+#Variable:
+    #. Based on the value:
+        1. Primitive variable
+        2. Reference variable
+
+    #. based on the memory it occupies
+        1. Local variable
+            ---> Variables which are created inside the method,method parameter, constructor or blocks,
+            --> Stack memory
+            1. Local Primitive variable
+            2. Local Reference variable
+        2. Instance Variable
+            --> Variables which are created at class level outside
+                all methods, constructors,blocks
+                without static keyword are called as instance variables.
+            --> Heap Memory area
+            1. Instance Primitive variable
+            2. Instance Reference variable
+            - instance variables are used to store object specific data.
+            - instance variable will get the memory every time we create an object.
+            How to access instance variables?
+            Ans. We need a reference to access the heap memory area.
+            e.g. Product p = new Product();
+                    p.productId, p.productName
+
+        3. Static variables -- class or method memory area
+            --> Variables which are created at class level outside
+                  all methods, constructors,blocks
+                     with static keyword are called as static variables.
+            1. static Primitive variable
+            2. static Reference variable
+        - static variables are used to store common data for all objects.
+        - static is used share data acorss all objects.
+        - static variable gets the memory only once at the time class loading.
+        - How to access static variables?
+            By using className.
+            ClassName.staticVarName
+
 
 class components
     - variables
