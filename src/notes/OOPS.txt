@@ -121,10 +121,40 @@ class components
         - default methods
         - abstract methods
         - final methods
-    - constructors
-        - default
-        - zero param
-        - param
+
+       - constructors
+            - What is it?
+                - It is a method which has same name as of class name without any return type or access modifiers[final, static, abstract]
+                e.g. class Student{
+                        public Student(){
+                           // statements
+                        }
+                    }
+            - Why do we need?
+              - These are used to construct to the object.
+              - Initialization:  providing some initial value for instance variables.
+              - constructing the object means providing some initial value for the object state.[instance variables]
+              - Use of Constructor: to provide some initial value for instance variables only not for local or static variable.
+            - How to the use constructor?
+                e.g. class Student{
+                        int rollNumber;//0
+                        String name; //null
+                       public Student(){
+                        rollNumber = 30;
+                        name = "dummy";
+                        System.out.println("constructor");
+                       }
+                    }
+                 Student student = new Student();
+
+        - default constructor:
+                - As a developer, if we do not provide any constructor then java compiler provides the default constructor.
+                - but if developer provides any constructor then default constructor will not be provided by the java compiler.
+                - default constructor does not accept input. zero params and it does not have any implementation/code inside the constructor body.
+
+        - zero param: it is developed by developer which does not accept any parameter
+        - parameterized: it is developed by developer which accepts the parameters.
+
     - this keyword
     - blocks
         - instance

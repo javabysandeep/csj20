@@ -9,6 +9,10 @@ public class Account {
         return accountNumber == 123 ? this.accountBalance : -000000.1f;
     }
 
+    public  Account(){
+        System.out.println("zero param constructor");
+    }
+
     public static void main(String[] args) {
         Account account = new Account();
         account.accountNumber = 123;

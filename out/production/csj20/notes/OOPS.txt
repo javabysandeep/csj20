@@ -121,7 +121,32 @@ class components
         - default methods
         - abstract methods
         - final methods
-    - constructors
+
+       - constructors
+            - What is it?
+                - It is a method which has same name as of class name without any return type or access modifiers[final, static, abstract]
+                e.g. class Student{
+                        public Student(){
+                           // statements
+                        }
+                    }
+            - Why do we need?
+              - These are used to construct to the object.
+              - Initialization:  providing some initial value for instance variables.
+              - constructing the object means providing some initial value for the object state.[instance variables]
+              - Use of Constructor: to provide some initial value for instance variables only not for local or static variable.
+            - How to the use constructor?
+                e.g. class Student{
+                        int rollNumber;//0
+                        String name; //null
+                       public Student(){
+                        rollNumber = 30;
+                        name = "dummy";
+                        System.out.println("constructor");
+                       }
+                    }
+                 Student student = new Student();
+
         - default
         - zero param
         - param
