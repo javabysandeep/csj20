@@ -18,6 +18,7 @@ public class Product {
         System.out.println(product.productName);
         System.out.println(product.productPrice);
         System.out.println(Product.companyName);
+        product.registerProduct();
     }
 
 }
