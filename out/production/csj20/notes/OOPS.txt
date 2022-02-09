@@ -147,10 +147,50 @@ class components
                     }
                  Student student = new Student();
 
-        - default
-        - zero param
-        - param
-    - this keyword
+    # Types of constructor:
+        - default constructor:
+                - As a developer, if we do not provide any constructor then java compiler provides the default constructor.
+                - but if developer provides any constructor then default constructor will not be provided by the java compiler.
+                - default constructor does not accept input. zero params, and it does not have any implementation/code inside the constructor body.
+        - zero param: it is developed by developer which does not accept any parameter
+        - parameterized: it is developed by developer which accepts the parameters.
+
+    # Blocks ---->
+    1. instance blocks
+    What: it is a block of code enclosed in curly braces at class level without any modifiers
+    Why: It is used to perform non-initialization activity such as maintaining the counter, logging, auditing
+    How: {
+            //block of code
+        }
+    When: Every time object is created the instance block will be called.
+
+    2. static block
+    What: it is a block of code enclosed in curly braces at class level with static keyword
+    Why: It is used to perform onetime activity such as database connection, loading the drivers, loading server configuration
+    How: static {
+            //block of code
+        }
+    When: It will be called only once at the time of class loading.
+    ------------------------------
+    Order of execution:
+        Static block
+        Instance blocks
+        constructors
+--------------------------------------------------------------------
+# this keyword
+    - what is it?
+        - It is a keyword and which is reference variable which points to the current class object.
+    - why do need it?
+        - since it ie being a reference to the current class object, we can access the current class object, instance variable, instance method
+        - When local variable and instance variable have the same, then to differentiate between them, we use this keyword.
+        - With this keyword, we can call the same class constructor from another constructor of the same class.
+            - we can't call more than one constructor from a given constructor.
+            - call to the constructor must be the first line of code inside the constructor. otherwise, we get the CTE.
+    - How to use it?
+        this();
+        this.iv;
+        this.instanceMethod();
+
     - blocks
         - instance
         - static
