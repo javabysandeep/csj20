@@ -194,13 +194,23 @@ class components
         this.iv;
         this.instanceMethod();
 
-    - blocks
-        - instance
-        - static
-    - nested class
-        - static nested class
-        - non-static i.e. inner class
+    - nested class : A class defined inside another class
         - local inner class
+            - A class defined inside the method.
+            - We define the class inside the method and we use it inside the method.
+            - As part of local inner class,
+                - we can't have static variable, static methods, static block, static class
+
+        - non-static i.e. inner class
+           - A class defined inside the class without static keyword.
+           - As part of  inner class,
+               - we can't have static variable, static methods, static block, static class
+
+        - static nested class
+             - A class defined inside the class with static keyword.
+             - As part of  static nested class,
+                - we can have all components: static as well as non-static members.
+
         - anonymous class
 OOPS
     - Access specifiers

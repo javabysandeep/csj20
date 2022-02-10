@@ -186,18 +186,31 @@ class components
         - With this keyword, we can call the same class constructor from another constructor of the same class.
             - we can't call more than one constructor from a given constructor.
             - call to the constructor must be the first line of code inside the constructor. otherwise, we get the CTE.
+        - with the help of this, we can the current class object reference.
+        - with the help of this, we can pass the current class object reference as a method parameter.
+
     - How to use it?
         this();
         this.iv;
         this.instanceMethod();
 
-    - blocks
-        - instance
-        - static
-    - nested class
-        - static nested class
-        - non-static i.e. inner class
+    - nested class : A class defined inside another class
         - local inner class
+            - A class defined inside the method.
+            - We define the class inside the method and we use it inside the method.
+            - As part of local inner class,
+                - we can't have static variable, static methods, static block, static class
+
+        - non-static i.e. inner class
+           - A class defined inside the class without static keyword.
+           - As part of  inner class,
+               - we can't have static variable, static methods, static block, static class
+
+        - static nested class
+             - A class defined inside the class with static keyword.
+             - As part of  static nested class,
+                - we can have all components: static as well as non-static members.
+
         - anonymous class
 OOPS
     - Access specifiers
