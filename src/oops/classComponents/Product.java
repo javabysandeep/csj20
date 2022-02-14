@@ -1,4 +1,4 @@
-package oops;
+package oops.classComponents;
 
 public class Product {
     int productId = 1;

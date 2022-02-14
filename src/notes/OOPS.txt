@@ -209,12 +209,26 @@ class components
         - static nested class
              - A class defined inside the class with static keyword.
              - As part of  static nested class,
-                - we can have all components: static as well as non-static members.
-
+             - we can have all components: static as well as non-static members.
         - anonymous class
 OOPS
-    - Access specifiers
-    - Encapsulation
+- Access specifiers
+    - what is it?
+      - These are the specifiers which specifies the access level of different class components
+    - why to use
+       - To specify, restrict the access to the class components
+    - What are the different access specifiers?
+       private: accessible within only same class
+       public : accessible throughout the app
+       default: accessible within only same package
+       protected: accessible within only same package plus child classes in diff. package
+*** Outer class can't be private, protected, static
+
+- Encapsulation
+    - We bind data and methods acting on it as single unit.
+    - We make data members private and access them by using public getters and setters method
+    - We use encapsulation to achieve better control on data and data security.
+
     - Inheritance
         - what is it
         - why to use

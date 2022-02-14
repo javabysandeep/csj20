@@ -1,4 +1,4 @@
-package oops.nestedClass;
+package oops.classComponents.nestedClass;
 
 public class Employee {
     int employeeId = 300;
