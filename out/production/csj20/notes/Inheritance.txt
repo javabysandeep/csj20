@@ -1,0 +1,30 @@
+What:
+- Inheritance means inheriting the properties as well as methods[non-private] of parent class into child class.
+- acquiring the one objects non-private properties and methods into another object
+- In inheritance process, private, static members will not take part.
+- we achieve inheritance with extends keyword.
+- Inheritance defines IS-A type relationship
+
+Why:
+- To reuse the code and avoid code duplication
+
+How to implement:
+- We define the Parent/Super/Base class and define common methods, data.
+- We create sub/child/derived class and using extends keyword we inherit the Parent class non-private data and methods
+
+	Class Parent{
+		//common data
+		//common methods
+	}
+
+	class Child extends Parent{
+		// Child acquires non-private data and methods.
+	}
+- Private members of the Parent class wont be accessible for Child Class.
+- Public members of the Parent class will  be accessible for Child Class.
+- Protected members of the Parent class will be accessible for Child Class irrespective of the package whether they are in the same or different package.
+- Default members of the Parent class will be accessible for Child Class, if both the classes are in the same package.
+- Static members of the Parent will be accessible for Child class, but they will always point to class area of Parent class and not the Child class method area.
+
+# Child class can access parent class non-private members.
+## Parent class cannot access the child class members

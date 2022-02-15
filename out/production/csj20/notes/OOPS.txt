@@ -223,7 +223,12 @@ OOPS
        default: accessible within only same package
        protected: accessible within only same package plus child classes in diff. package
 *** Outer class can't be private, protected, static
-    - Encapsulation
+
+- Encapsulation
+    - We bind data and methods acting on it as single unit.
+    - We make data members private and access them by using public getters and setters method
+    - We use encapsulation to achieve better control on data and data security.
+
     - Inheritance
         - what is it
         - why to use
