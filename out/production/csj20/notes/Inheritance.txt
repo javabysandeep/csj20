@@ -28,3 +28,25 @@ How to implement:
 
 # Child class can access parent class non-private members.
 ## Parent class cannot access the child class members
+
+# Order of execution:
+1. static block of parent class
+2. static block of child class
+3. instance block of parent class
+4. con of parent class
+5. instance block of child class
+6. con of child class.
+
+#***# From every child class constructor, there is call to the super class constructor.
+
+Class A{
+    private A{}
+}
+
+Class B extends A{
+    B(){
+    }
+    PSVM(){
+         B b = new B();
+    }
+}
