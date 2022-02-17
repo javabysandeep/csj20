@@ -1,0 +1,43 @@
+Polymorphism: It is an ability of an object to change the behaviour.
+
+Poly --> Many
+
+Morph --> forms --> behaviour --> method --> implementation
+
+Polymorphism talks about multiple implementation[methods]
+
+Objects behaviour can change at compile time or runtime.
+
+Compile time polymorphism or Static binding or early binding or static polymorphism
+Ans. call to the method is decided at compile time.
+- Method overloading
+
+Runtime polymorphism or Dynamic binding or late binding or dynamic polymorphism
+Ans. - call to the method is decided at runtime.
+- Method overriding
+
+How do achieve the polymorphism?
+Method overloading:
+	- we define multiple methods with the same name, but different signature(Either no. of parameters or type of parameters should differ) in the same class.
+	- return type of the method will not be considered for method overloading
+	- call to the method is decided at compile time.
+	- We can overload private, static, final, public, protected, default, instance, methods
+    - main method we can overload.
+
+Method overriding:
+	- we define a method with the same name, same signature, same return type in the child class as of Parent class method.
+	- return type of the method will be considered for method overriding
+	- call to the method is decided at runtime.
+	- For method overriding, there should be an IS-A type of relationship.
+
+Rules:
+1. private methods cannot be overridden.
+2. static methods cannot be overridden.
+3. final methods cannot be overridden.
+4. access specifier: We can do the promotion of access specifier in Child class.
+default --> protected --> public
+
+
+
+
+
