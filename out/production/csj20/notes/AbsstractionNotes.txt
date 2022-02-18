@@ -47,7 +47,6 @@ Q. What all things we cannot have as part of an interface?
     - static block
     - instance variables.
     - private methods
--- By default variables are public static final.
 
 Q. What all things we can have as part of an interface?
 1. abstract methods
@@ -59,23 +58,9 @@ Q. What all things we can have as part of an interface?
 Q. can we write main method inside the interface?
 A. Yes we can write.
 
-- One class extends another class
-- one class implements another interface
-- One interface extends another interface
 
-- Invalid combination:
-    class A extends InterfaceA{}
-    interface B implments InterfaceA{}
 
-***
-- when one concrete class implements another interface, then it is compulsory for the child class to provide the implementation.
-- when one abstract class implements another interface, then it is optional for the child class to provide the implementation.
 
-# Marker interface: An empty interface it is called as marker interface.
-
-# Functional interface:
-- An interface which contains only one abstract method.
-- It may contain any nuo. of static methods or default methods.
 
 
 
