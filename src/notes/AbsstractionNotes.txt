@@ -1,0 +1,44 @@
+- concrete method: a method with method body/ implementation
+- concrete class: a class which contains only concrete methods
+- abstract method: a method created with abstract keyword without method body/implementation
+- abstract class: a class which can contain abstract methods
+- abstraction: it is a process of hiding the implementation details[method body] and exposing the functionality[method declaration]
+- How do we achieve abstraction?
+    - abstract class
+    - interface: it is a fully unimplemented class which contains only abstract methods[ incomplete methods]
+
+
+#Abstract class
+- we create abstract class with abstract keyword.
+- We can have all components of concrete class plus abstract methods inside the abstract class
+- We can't create the object of abstract class since it is declared abstract[incomplete].
+- when one concrete class extends another abstract class, then it is compulsory for the child class to provide the implementation.
+- when one abstract class extends another abstract class, then it is optional for the child class to provide the implementation.
+
+Q. How to call the abstract class constructor?
+A. We create the concrete child class and extend abstract class
+   then with child class object creation internally child class constructor calls the parent class abstract
+
+# if we try to create an objetc of an abstract class or interface then we get compile time exception: InstantiationException
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

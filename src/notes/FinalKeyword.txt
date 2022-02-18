@@ -1,0 +1,24 @@
+final: it is a keyword which can be applied on variables, methods, classes
+final keyword cannot be applied on constructors, blocks
+
+
+-final variable: A variable created with final keyword whose value cannot be changed.
+-final variables can be: static, instance, local
+ final int a = 30;
+
+final methods:
+- a method created with final keyword cannot be overridden.
+- We can overload final methods.
+- we can make static methods final.
+
+final void display(){
+}
+
+final class:
+- a class created with final keyword cannot be extended.
+
+final class A{
+}
+
+- if class is final it doesn't mean variables, methods and nested classes are final.
+
