@@ -53,7 +53,7 @@ Q. What all things we can have as part of an interface?
 1. abstract methods
 2. static methods
 3. default methods
-4. nested class: static, non-static
+4. nested class: static
 5. variables: static variables,
 
 Q. can we write main method inside the interface?
@@ -77,6 +77,10 @@ A. Yes we can write.
 - An interface which contains only one abstract method.
 - It may contain any nuo. of static methods or default methods.
 
+Conclusion:
+1. variables are by default public static final
+2. methods are by default public abstract
+3. classes are by default public static.
 
 
 

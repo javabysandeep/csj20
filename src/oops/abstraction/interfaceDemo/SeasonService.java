@@ -17,6 +17,10 @@ public interface SeasonService {
 
     public static void main(String[] args) {
         System.out.println("Main method inside the interface");
+        SeasonService.Feature feature = new Feature();
     }
 
+     static class Feature{
+
+    }
 }
