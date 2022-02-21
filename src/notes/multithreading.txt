@@ -1,0 +1,60 @@
+Multitasking:
+
+Process: a program in execution
+
+Context: it is a process
+
+Multiprocessing: executing multiple process at the same time
+
+Context switch: switching from one process to another process by saving the metadata regarding the process
+
+Multithreading:
+- Executing multiple tasks at the same time at program level.
+- Threads are independent executions.
+- Threads share the common memory of process.
+- Threads
+
+Thread Scheduler:
+- It is program which decides the thread execution schedule.
+- Threads has to be registered with thread scheduler
+
+- To make any piece of code, as thread we have to use classes and interfaces provided by java.
+
+# Thread
+- it is class present in java.lang package
+
+# Constructors of Thread class
+  public java.lang.Thread();
+  public java.lang.Thread(java.lang.Runnable);
+  java.lang.Thread(java.lang.Runnable, java.security.AccessControlContext);
+  public java.lang.Thread(java.lang.ThreadGroup, java.lang.Runnable);
+  public java.lang.Thread(java.lang.String);
+  public java.lang.Thread(java.lang.ThreadGroup, java.lang.String);
+  public java.lang.Thread(java.lang.Runnable, java.lang.String);
+  public java.lang.Thread(java.lang.ThreadGroup, java.lang.Runnable, java.lang.String);
+  public java.lang.Thread(java.lang.ThreadGroup, java.lang.Runnable, java.lang.String, long);
+
+What are the different ways to create a Thread?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

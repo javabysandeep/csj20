@@ -5,6 +5,7 @@ public class DatatypeDemo {
         //byte, short, int, long, float, double, char, boolean
         byte b1 = 127;
         short s = 32767;
+
         int i = 32770;
         long lVal = Long.MAX_VALUE-1;
         System.out.println(lVal);
