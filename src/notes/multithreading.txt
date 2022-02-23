@@ -47,6 +47,24 @@ What are the different ways to create a Thread?
 - For every java application there is one thread created by JVM that is main.
 - Task of the main thread is written inside the main method.
 
+Methods of Thread class:
+- setName("Thread name")
+- getName()
+- Thread.currentThread(): it returns the reference of currently executing thread
+- setPriority(priorityInteger)
+    - In thread class three constants are there to represent priority
+    - these are static final
+    - MIN_PRIORITY[1]
+    - NORM_PRIORITY[5]
+    - MAX_PRIORITY[10]
+   - If we specify the priority out of range[1-10] then we get IllegalArgumentException
+- start(): this is used to register the thread with Thread scheduler.
+    - We cannot start the thread twice otherwise we get IllegalThreadStateException
+# Different methods to  prevent thread execution
+- Thread.sleep(timeInterval);
+- join
+- yield
+
 
 
 

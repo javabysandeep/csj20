@@ -6,7 +6,11 @@ public class ThreadLambdaWay {
             for (int i = 0; i < 5; i++) {
                 System.out.println(Thread.currentThread().getName());
             }
-        }, "worker");
+        });
+        worker.setName("worker");
+        worker.setPriority(Thread.NORM_PRIORITY);
         worker.start();
+        worker.start();
+        System.out.println(Thread.currentThread().getName());
     }
 }
