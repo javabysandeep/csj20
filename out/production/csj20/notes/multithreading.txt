@@ -64,6 +64,17 @@ Methods of Thread class:
 - Thread.sleep(timeInterval);
 - join
 - yield
+    - It is just a hint to the Thread scheduler that currently executing thread is willing to give up the execution for all the threads which are having same or higher priority
+    - But it is thread schedulers decision to take this up.
+
+# Thread life cycle
+[New/Born State (Thread t = new Thread(task))] -> [Ready/runnable (t.start())] -> [Running (run().. is running)] --> [Dead/Complete/terminated (run is completed)]
+                                            |
+                                            |
+                                 [Waiting/Sleeping/Blocked (sleep, join, yield, wait)]
+
+ # synchronized
+
 
 
 
