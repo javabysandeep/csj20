@@ -18,6 +18,11 @@ public class Syncrhonization {
 class Printer {
     synchronized void print(String message) {
         for (int i = 1; i <=10; i++) {
+            try {
+                wait(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             System.out.println(i+ " printing......." + message);
         }
     }
