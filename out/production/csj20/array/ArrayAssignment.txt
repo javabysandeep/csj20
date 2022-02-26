@@ -1,0 +1,52 @@
+1. Java Examples on Finding the Largest and Smallest Numbers in an Array
+		1. Java Program to Find the Largest Two Numbers in a Given Array
+		2. Java Program to Find the Second Largest & Smallest Elements in an Array
+		3. Java Program to Find the Largest Number in an Array
+
+2. Java Examples on Inserting and Deleting Elements to and from an Array
+		1. Java Program to Put Even & Odd Elements of an Array in 2 Separate Arrays
+		2. Java Program to Insert an Element in a Specified Position in a Given Array
+		3. Java Program to Delete the Specified Integer from an Array
+
+3. Java Examples on Sort and Merge Operations on an Array
+		1. Java Program to Sort the Array in an Ascending Order
+		2. Java Program to Sort the Array in Descending Order
+		3. Java Program to Sort Names in an Alphabetical Order
+		4. Java Program to Split an Array from Specified Position
+
+4. Java Examples on Operations on Individual Elements of an Array
+		1. Java Program to Calculate Sum & Average of an Array
+		2. Java Program to Increment Every Element of the Array by One & Print Incremented Array
+		3. Java Program to Find the Number of Non-Repeated Elements in an Array
+		4. Java Program to Identify Missing Numbers in a Given Array
+		5. Java Program to Find 2 Elements in the Array such that Difference between them is Largest
+		6. Java Program to Count the Number of Occurrence of an Element in an Array
+		7. Java Program to Accept Array Elements and Calculate Sum
+		8. Java Program to Segregate 0s on Left Side & 1s on Right Side of the Array
+		9. Java Program to Find the Number of Elements in an Array
+
+5. Java Examples on Mathematical Functions and their Applications on Arrays
+		1. Java Program to Find Union & Intersection of 2 Arrays
+		2. Java Program to Find if a given Integer X Appears more than N/2 Times in a Sorted Array of N Integers
+		3. Java Program to Accept the Marks of a Student into a 1D Array and find Total Marks and Percentage
+
+6. Java Examples on Printing the Elements of an Array
+		1. Java Program to Print the Odd & Even Numbers in an Array
+		2. Java Program to Print the kth Element in the Array
+
+7. Java Examples on Search Operation on an Array
+		1. Java Program to Search Key Elements in an Array
+		2. Java Program to Find the Biggest Number in an Array of Numbers.
+
+8. Java Examples on Various Matrix Operations
+		1. Java Program to Display Transpose Matrix
+		2. Addition & substraction of matrices
+		3. Java Program to Find the Trace & Normal of a given Matrix
+		4. Java Program to Display Upper Triangular Matrix
+		5. Java Program to Display Lower Triangular Matrix
+		6. Java Program to Interchange any two Rows & Columns in the given Matrix
+		7. Java Program to Find the Frequency of Odd & Even Numbers in the given Matrix
+		8. Java Program to Accept a Matrix of Order MxN & Interchange the Diagonals
+		9. Java Program to Determine if a given Matrix is a Sparse Matrix
+		10. Java Program to Add Two MXN Matrix from User Input
+		11. Java Program to Perform Matrix Multiplication
