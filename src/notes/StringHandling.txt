@@ -1,0 +1,109 @@
+1. Define String
+- String is a predefined class present inside the java.lang package.
+- It is used to represent group of characters.
+- Internally string class maintains the array of characters.
+
+2. In How many ways we can store string data?
+- using string object
+- using array of chars
+
+3. Why String class is given when char array is already available?
+- Storing the group of characters with array of chars,
+    - is difficult and time-consuming.
+    - no method support
+    - arrays are fixed in nature
+
+4. What are the different ways to construct String object?
+- we can create string objects in two ways.
+- using new keyword.
+    e.g. String str = new String("some value");
+- by using literal way
+    e.g. String str = "some value";
+
+5. What is the difference in String object creation from the String literal and the constructor?
+- using new keyword:
+    - string object will be created inside the HEAP without checking the content.
+    - string object will be also created inside the SCP, but it is optional.
+    - If the object is already present inside the SCP then we get reference of the existing object.
+    - reference will point to the object in heap.
+
+- using literal way:
+    - string object will be created inside the SCP, but it is optional.
+    - If the object is already present inside the SCP then we get reference of the existing object.
+    - String objects will not be created inside the HEAP.
+    - reference will point to the object in SCP.
+
+
+6. String Pooling
+
+7. What is immutable and why String objects are immutable?
+Ans. We cannot modify.
+
+8. What do you mean by immutable class and mutable objects?
+Ans.
+- Immutable class
+    - make the final
+    - make data members private
+    - do not provide any setters
+- If a class is immutable, we cannot change the state of class.
+- Mutable objects state can be changed.
+- String objects are immutable.
+- Once the string is created we cannot modify it.
+
+9. Can we develop immutable object?
+Ans. Yes we can.
+- make the final
+- make data members private
+- do not provide any setters
+
+10. Why StringBuffer class is given when we have String class to Store String data?
+
+11. Why StringBuilder class is given when we have String, StringBuffer class to Store String data?
+12. Is String thread safe?
+13. String vs StringBuffer vs StringBuilder
+14. Can we assign String literal directly to StringBuffer or StringBuilder type variables?
+15. Printing String object
+16. How can we find length of the String?
+17. what is the difference between length & length()?
+18. The limitation of String class.
+19. Concatenation, how Strings can be concatenated?
+20. Convert String case
+21. How can we replace a character or substring in the given String?
+22. How can we trim string leading and trailing spaces?
+23. How String Objects must be compared for equality?
+24. What do meant by comparing string objects lexicographically, how it can be done?--> compareTo
+25. How can we read characters from the String?
+26. How can we find the position of a character or sub-string?
+27. Finding string startsWith or endsWith
+28. Splitting string into tokens
+29. What are the different operations we can't perform on string using String object?
+30. Define **StringBuffer**
+31. When to use StringBuffer class?
+32. What are the special operations can be performed on StringBuffer, those cannot be applied on String?
+33. Ways of creating StringBuffer object creation?
+34. Append, Insert, Delete, reverse and overriding characters in the StringBuffer.
+35. Finding StringBuffer capacity and length
+36. Controlling StringBuffer capacity
+37. Ways of Converting String to StringBuffer and vice versa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
