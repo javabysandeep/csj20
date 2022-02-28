@@ -1,4 +1,4 @@
-package array;
+package stringHandling;
 
 public class ArrayChars {
     public static void main(String[] args) {
