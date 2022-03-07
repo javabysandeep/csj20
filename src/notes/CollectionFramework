@@ -1,0 +1,58 @@
+# Drawbacks of array:
+- Fixed in size. At runtime, we cant increase or decrease the size of an array.
+- Homogenous data.
+- no method support.
+    - for every requirement such as sorting, searching, finding, replace, programmer is responsible to write code
+- Modification of elements such as deletion, insertion will take time.
+
+# Framework: Set of predefined code, set of classes, interfaces, methods.
+- With the help of framework, we can solve the business problems.
+- Learning framework is to know what code is written and where can we use that.
+
+
+# Collection:
+    - It is a framework which is provided by Java
+    - Which provides set of classes and interfaces
+    - It provides the set of Data structures[classes and interfaces] and algorithms[implementations or methods]
+    - Data structures:
+        - The way data is stored or organized in different containers.e.g
+    - Implementations/Algorithms/Methods
+    - it is a interface present inside the java.util package
+
+Methods of Collection interface:
+public interface java.util.Collection<E> extends java.lang.Iterable<E> {
+  public abstract int size();
+  public abstract boolean isEmpty();
+  public abstract boolean contains(java.lang.Object);
+  public abstract java.util.Iterator<E> iterator();
+  public abstract java.lang.Object[] toArray();
+  public abstract <T> T[] toArray(T[]);
+  public abstract boolean add(E);
+  public abstract boolean remove(java.lang.Object);
+  public abstract boolean containsAll(java.util.Collection<?>);
+  public abstract boolean addAll(java.util.Collection<? extends E>);
+  public abstract boolean removeAll(java.util.Collection<?>);
+  public boolean removeIf(java.util.function.Predicate<? super E>);
+  public abstract boolean retainAll(java.util.Collection<?>);
+  public abstract void clear();
+  public abstract boolean equals(java.lang.Object);
+  public abstract int hashCode();
+  public java.util.Spliterator<E> spliterator();
+  public java.util.stream.Stream<E> stream();
+  public java.util.stream.Stream<E> parallelStream();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

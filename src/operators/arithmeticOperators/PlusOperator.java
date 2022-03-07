@@ -20,5 +20,6 @@ public class PlusOperator {
         System.out.println(10 / 0.0); //Infinity
         System.out.println(10 % 0.0);//NaN
 //        System.out.println(true%true);
+        System.out.println(4%10);//R=4
     }
 }
