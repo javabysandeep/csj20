@@ -45,25 +45,7 @@ public interface java.util.Collection<E> extends java.lang.Iterable<E> {
   public java.util.stream.Stream<E> parallelStream();
 }
 
-# Wrapper classes
-byte --> Byte
-short --> Short
-int --> Integer
-long --> Long
-float --> Float
-double -> Double
-char --> Character
-boolean ---> Boolean
 
-- All these classes are immutable classes.
-- Boxing: converting primitive value to Object format
-- UnBoxing: converting Object value to primitive format
-- from java 1.5 this is done automatically. So it is called as Auto-boxing and Auto-Unboxing
-- These classes are present in java.lang package
-
--> constructor
-    - direct value as primitive
-    - primitive value enclosed in String
 
 
 
