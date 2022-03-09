@@ -1,14 +1,13 @@
+# Framework: Set of predefined code, set of classes, interfaces, methods.
+- With the help of framework, we can solve the business problems.
+- Learning framework is to know what code is written and where can we use that.
+
 # Drawbacks of array:
 - Fixed in size. At runtime, we cant increase or decrease the size of an array.
 - Homogenous data.
 - no method support.
     - for every requirement such as sorting, searching, finding, replace, programmer is responsible to write code
 - Modification of elements such as deletion, insertion will take time.
-
-# Framework: Set of predefined code, set of classes, interfaces, methods.
-- With the help of framework, we can solve the business problems.
-- Learning framework is to know what code is written and where can we use that.
-
 
 # Collection:
     - It is a framework which is provided by Java
@@ -21,6 +20,12 @@
     - Collections are growable in nature.
     - We can hold heterogeneous data.
 
+# Difference between Array and Collection
+-> Array                        Collection
+- fixed in nature                   - growable in nature
+- can contain same type data        - can contain both type data
+- No method support for data structures - Yes support
+- can hold both prim as well as object  - only object
 
 Methods of Collection interface:
 public interface java.util.Collection<E> extends java.lang.Iterable<E> {
@@ -45,10 +50,33 @@ public interface java.util.Collection<E> extends java.lang.Iterable<E> {
   public java.util.stream.Stream<E> parallelStream();
 }
 
+# Wrapper classes
+byte --> Byte
+short --> Short
+int --> Integer
+long --> Long
+float --> Float
+double -> Double
+char --> Character
+boolean ---> Boolean
 
+- All these classes are immutable classes.
+- Boxing: converting primitive value to Object format
+- UnBoxing: converting Object value to primitive format
+- from java 1.5 this is done automatically. So it is called as Auto-boxing and Auto-Unboxing
+- These classes are present in java.lang package
 
+-> constructor
+    - direct value as primitive
+    - primitive value enclosed in String
 
+- We can convert given primitive to object format by using wrapper class constructor or methods such as valueOf, parseXXXX();
 
+- parseXXX: convert the string format data into primitive type
+    e.g. int i = Integer.parseInt("1234");
+
+- valueOf: convert the String format data into object format
+    e.g. Integer integer2 = Integer.valueOf("1234");
 
 
 
