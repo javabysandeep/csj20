@@ -78,6 +78,58 @@ boolean ---> Boolean
 - valueOf: convert the String format data into object format
     e.g. Integer integer2 = Integer.valueOf("1234");
 
+## Implementation classes for List
+- List implementing classes
+    - can hold duplicates
+    - insertion order is maintained.
+    - we can hold multiple null values
+
+
+1. ArrayList
+    - It is a direct implementation class for List
+    - It is working on array data structure internally
+    - Internally it will create an array with default capacity 10 or constructor provided capacity.
+    - Whenever an array gets fulled then a new array will be created with new capacity.
+        - New capacity = old capacity * 1.5+1;
+    - ArrayList methods are not synchronized.
+    - It is a best choice for retrieval of data. e.g. List of countries
+    - It is worst choice if there are modifications are there.
+    - Methods
+        - to get single - get(index);
+        - to add a single - add(index, object), add(object)
+        - to add multiple elements - addAll(collection), addAll(index, collection)
+        - to Remove single element - remove(index), remove(object)
+        - To remove multiple elements - removeAll(collection)
+        - To remove elements based on condition: removeIf(Predicate)
+        - To remove all elements : clear();
+        - To remove a single element: iterator-: remove();
+        - To check the single element existence : contains(obj);
+        - To check the collection existence : containsAll(collection);
+        - To check the size of an arrayList : size()
+        - to check if it is empty : isEmpty()
+        - find intersection: retainAll(collection)
+
+//todo : fail-fast, fail-safe, ConcurrentModificationException, Sort the arrayList
+
+Q. When do we get ConcurrentModificationException?
+Ans. While iterating the elements from the give collection, if we do both read and remove elements
+
+# Iterators or Cursors: These are used to iterate the elements from given collection
+1. Iterator [Universal for all collections]
+    e.g. Iterator itr = arrayList.iterator();
+           while(itr.hasNext()){
+            Object obj = itr.next();
+            itr.remove();
+           }
+        hasNext: returns boolean value true if elements are there in the collection else returns false
+        next: gets the element and moves the cursor to the element
+        remove: removes the element from the collection
+
+2. ListIterator [This cursor is used to read elements from List implementing classes]
+3. Enumerator [ This is only for legacy classes such as Vector, Stack, Hashtable]
+
+
+
 
 
 
