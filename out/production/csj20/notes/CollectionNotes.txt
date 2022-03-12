@@ -128,6 +128,26 @@ Ans. While iterating the elements from the give collection, if we do both read a
 2. ListIterator [This cursor is used to read elements from List implementing classes]
 3. Enumerator [ This is only for legacy classes such as Vector, Stack, Hashtable]
 
+** Comparable **
+- It is used for natural sorting order.
+- We can sort basis on single field.
+
+## How to sort a list?
+- We use Collections.sort(list);
+- for sorting, list elements must be of same type.
+- All wrapper classes and String implements Comparable(I) which means compareTo is overridden.
+    - That's the reason we can sort list of integers with Collections.sort(list);
+- Comparable contains compareTo(T t);
+
+## How do we sort custom objects list? Sort list of employees ?
+- We can make the Employee class of type Comparable by implementing.
+- Then give override to compareTo() method and specify the logic on which sorting should take place
+- compareTo method returns 0, +, -.
+
+## How to do multiple field sorting? Comparator(I) - compare()
+- We use it for custom sorting on multiple fields.
+- We do not modify the existing class.
+- We write separate class of type Comparator and provide its object to Collections.sort(list, objTypeComparator);
 
 
 
