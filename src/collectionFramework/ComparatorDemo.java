@@ -18,7 +18,7 @@ public class ComparatorDemo {
         products.add(product5);
 
         Comparator<Product> comparator = (p1, p2) -> p1.getProductPrice() - p2.getProductPrice();
-        Collections.sort(products, (p1, p2) -> p1.getProductPrice() - p2.getProductPrice());
+        Collections.sort(products, comparator);
         for (Product p : products) {
             System.out.println(p);
         }
@@ -43,6 +43,12 @@ public class ComparatorDemo {
             }
         }
         System.out.println("Expensvie "+expensiveProducts);
+        System.out.println("Products starting with name L");
+        for (Product product:products) {
+            if(product.getProductName().startsWith("L")){
+                System.out.println(product);
+            }
+        }
     }
 
 }

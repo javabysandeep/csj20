@@ -1,9 +1,24 @@
 package collectionFramework;
 
+import java.util.Objects;
+
 public class Employee implements Comparable<Employee>{
     private Integer employeeId;
     private String employeeName;
     private Float employeeSalary;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return employeeId.equals(employee.employeeId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(employeeId);
+    }
 
     public Employee() {
     }
@@ -49,7 +64,7 @@ public class Employee implements Comparable<Employee>{
 
     @Override
     public int compareTo(Employee o) {
-//        return (int)(this.employeeSalary- o.employeeSalary);
-        return this.getEmployeeName().compareTo(o.getEmployeeName());
+return (int)(this.employeeSalary- o.employeeSalary);
+        //return this.getEmployeeName().compareTo(o.getEmployeeName());
     }
 }
