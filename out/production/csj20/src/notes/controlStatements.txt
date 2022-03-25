@@ -1,0 +1,151 @@
+Topic: Control Statements
+Date: Tuesday 25 Jan, 2022
+
+What are control statements?
+ - control statements helps to decide the flow of execution of the code.
+ - helps in deciding which part of the code to execute, skip, and repeat.
+
+Types control statements:
+1. conditional statements :
+    -They help you to decide which part of the code to execute and
+        skip the code based on some condition(boolean) or some value
+    - if else [condition]
+    - switch [value]
+2. looping statements/ repeat / iterative statements
+  repeat the statements
+    - for [ when no. of iterations are known in advance]
+    - while [ when no. of iterations are not known in advance]
+    - do_ while [ when no. of iterations are not known in advance & want to execute code at least once]
+    - foreach [array and collections]
+3. transfer statements
+    To transfer the control of execution
+    - return [ we can return the value, ]
+    - break
+    - continue
+------------------------------------------------------
+if:
+- What is it?  it is control statement which is a keyword
+- Why to use it?
+    - For decision-making
+    - to decide which part of the code to execute.
+    - if the condition is true then if block is executed.
+    - If the condition is false then rest of the code is executed.
+- if can come independently.
+syntax:
+        if (condition) {
+        // block of statements are executed if the condition is true
+        }
+       condition:
+        - condition can be direct boolean value
+        - it can be an expression which results into boolean value
+        - it can be a method call which returns boolean value.
+
+
+else :
+- it is keyword and it comes with if.
+- else cannot come independent. it should be always with if.
+- else block is executed when the if condition is false.
+
+syntax:
+        if(condition){
+          // if the cond is true
+        }
+
+        else {
+            // if the cond is false
+        }
+- we cannot write independent statements in-between if and else otherwise it leads CTE
+
+
+	• controls the flow of execution of the code
+	What are the different types of control statements are there in java ?
+		○ If-else, switch, for, while, do-while, break, continue, return
+	• Invalid : if(23), if("A"), if('A'), if(23*2), if(!5); if(4 & 5)
+	• Valid: if(true), if(false), if(123 > 12), if(5==6), if( (5>60) & (5> 4) ), if(false !=true); if(!true);
+	• If can come independently, else is optional
+Syntax:
+
+if(condition) {
+	// statements--> these will be executed when condition is true
+}
+// rest of the code ; if condition is false
+
+
+	• For every else there must be a matching if block.
+	• We cannot write independent statements in between if and else
+
+	When to use if and when to use switch?
+	Ans.if--- if we are doing comparison operation--> { >, >=, <, <=, !=, ==, &, &&, |, ||, ^} as part of condition evaluation which results into boolean
+	value then always go for if
+
+	If we are performing equality check then it is always recommended to use switch.
+
+	Switch
+	• It is keyword which used to compare a given value across given cases
+	• We are comparing the single value across multiple case labels
+
+switch ( value) {
+	case label: statements;
+			break;
+	default:
+}
+	• Value must be of type [byte, short, int, char, String, enum]
+	• Value cannot be boolean, long, float, double
+	• In Switch, writing case, default, break are optional.
+	• Value and case label data type must be same.
+	• If default is not there, then given value will be compared with given cases if it is matching then that particular case will be executed, and if it is not matching then there will not be anything to execute inside the switch.
+	• If break is not there,
+	then from matching case label all the statements of following cases statement will be executed till there is next break.
+
+--------------------------------------------------
+
+for : it is a keyword which is used to perform repeat task
+
+Syntax: for (initialization; condition; increment/decrement ) {
+        // code to be executed repeatedly
+    }
+    initialization :
+        - it is optional.
+        - this block gets executed only once.
+    condition:
+        - it is also optional but if we don't provide the value  by default it is true
+        and loop continue infinitely
+        - condition can be direct boolean true false
+        - condition can be expression which results into boolean
+        - condition can be a method call which returns boolean
+
+    increment/decrement:
+        - it is also optional.
+        - we write code which increment or decrment value to maintain the counter
+}
+
+# while
+    - when we do not the iterations in advance
+    - syntax while (condition){
+            // statements
+        }
+     condition is mandatory.
+     condition:
+            - it is also optional but if we don't provide the value  by default it is true
+            and loop continue infinitely
+            - condition can be direct boolean true false
+            - condition can be expression which results into boolean
+            - condition can be a method call which returns boolean
+
+# break :
+        - it is keyword which is used in either switch or loops
+        - if we use break outside loops or switch then we get CTE.
+        - break takes the control out of the loop and switch.
+
+#continue:
+        - it is keyword which is used in only loops
+        - if we use continue outside loops then we get CTE.
+        - it skips the current iteration and continue from the next iteration.
+
+#return
+        - it is keyword which is used inside the method.
+        - whenever return statements executes inside the method, then rest of the code from method will not be executed.
+
+
+
+

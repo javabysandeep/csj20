@@ -1,0 +1,12 @@
+step1: create the account on github
+step2: download gitbash for windows and install- https://git-scm.com/downloads
+step3: generate the ssh key
+        1. open gitbash
+        2. hit the command
+            ssh-keygen -t ed25519 -C "your_email@example.com"
+            folder created under user, .ssh
+
+        3. windows + R :  type .ssh ---> copy key from public file
+step4: copy the ssh key under github--> settings--> SSH and GPG keys --> create new ssh key
+step5: go to gitbash and
+           hit : git clone git@github.com:sandeepbhingle/csj20.git

@@ -39,6 +39,7 @@ interface I1 {
 class A implements I1 {
     @Override
     public void m1() {
+
     }
 }
 

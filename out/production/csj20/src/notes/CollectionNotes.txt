@@ -1,0 +1,161 @@
+# Framework: Set of predefined code, set of classes, interfaces, methods.
+- With the help of framework, we can solve the business problems.
+- Learning framework is to know what code is written and where can we use that.
+
+# Drawbacks of array:
+- Fixed in size. At runtime, we cant increase or decrease the size of an array.
+- Homogenous data.
+- no method support.
+    - for every requirement such as sorting, searching, finding, replace, programmer is responsible to write code
+- Modification of elements such as deletion, insertion will take time.
+
+# Collection:
+    - It is a framework which is provided by Java
+    - Which provides set of classes and interfaces
+    - It provides the set of Data structures[classes and interfaces] and algorithms[implementations or methods]
+    - Data structures:
+        - The way data is stored or organized in different containers.e.g
+    - Implementations/Algorithms/Methods
+    - it is a interface present inside the java.util package
+    - Collections are growable in nature.
+    - We can hold heterogeneous data.
+
+# Difference between Array and Collection
+-> Array                        Collection
+- fixed in nature                   - growable in nature
+- can contain same type data        - can contain both type data
+- No method support for data structures - Yes support
+- can hold both prim as well as object  - only object
+
+Methods of Collection interface:
+public interface java.util.Collection<E> extends java.lang.Iterable<E> {
+  public abstract int size();
+  public abstract boolean isEmpty();
+  public abstract boolean contains(java.lang.Object);
+  public abstract java.util.Iterator<E> iterator();
+  public abstract java.lang.Object[] toArray();
+  public abstract <T> T[] toArray(T[]);
+  public abstract boolean add(E);
+  public abstract boolean remove(java.lang.Object);
+  public abstract boolean containsAll(java.util.Collection<?>);
+  public abstract boolean addAll(java.util.Collection<? extends E>);
+  public abstract boolean removeAll(java.util.Collection<?>);
+  public boolean removeIf(java.util.function.Predicate<? super E>);
+  public abstract boolean retainAll(java.util.Collection<?>);
+  public abstract void clear();
+  public abstract boolean equals(java.lang.Object);
+  public abstract int hashCode();
+  public java.util.Spliterator<E> spliterator();
+  public java.util.stream.Stream<E> stream();
+  public java.util.stream.Stream<E> parallelStream();
+}
+
+# Wrapper classes
+byte --> Byte
+short --> Short
+int --> Integer
+long --> Long
+float --> Float
+double -> Double
+char --> Character
+boolean ---> Boolean
+
+- All these classes are immutable classes.
+- Boxing: converting primitive value to Object format
+- UnBoxing: converting Object value to primitive format
+- from java 1.5 this is done automatically. So it is called as Auto-boxing and Auto-Unboxing
+- These classes are present in java.lang package
+
+-> constructor
+    - direct value as primitive
+    - primitive value enclosed in String
+
+- We can convert given primitive to object format by using wrapper class constructor or methods such as valueOf, parseXXXX();
+
+- parseXXX: convert the string format data into primitive type
+    e.g. int i = Integer.parseInt("1234");
+
+- valueOf: convert the String format data into object format
+    e.g. Integer integer2 = Integer.valueOf("1234");
+
+## Implementation classes for List
+- List implementing classes
+    - can hold duplicates
+    - insertion order is maintained.
+    - we can hold multiple null values
+
+
+1. ArrayList
+    - It is a direct implementation class for List
+    - It is working on array data structure internally
+    - Internally it will create an array with default capacity 10 or constructor provided capacity.
+    - Whenever an array gets fulled then a new array will be created with new capacity.
+        - New capacity = old capacity * 1.5+1;
+    - ArrayList methods are not synchronized.
+    - It is a best choice for retrieval of data. e.g. List of countries
+    - It is worst choice if there are modifications are there.
+    - Methods
+        - to get single - get(index);
+        - to add a single - add(index, object), add(object)
+        - to add multiple elements - addAll(collection), addAll(index, collection)
+        - to Remove single element - remove(index), remove(object)
+        - To remove multiple elements - removeAll(collection)
+        - To remove elements based on condition: removeIf(Predicate)
+        - To remove all elements : clear();
+        - To remove a single element: iterator-: remove();
+        - To check the single element existence : contains(obj);
+        - To check the collection existence : containsAll(collection);
+        - To check the size of an arrayList : size()
+        - to check if it is empty : isEmpty()
+        - find intersection: retainAll(collection)
+
+//todo : fail-fast, fail-safe, ConcurrentModificationException, Sort the arrayList
+
+Q. When do we get ConcurrentModificationException?
+Ans. While iterating the elements from the give collection, if we do both read and remove elements
+
+# Iterators or Cursors: These are used to iterate the elements from given collection
+1. Iterator [Universal for all collections]
+    e.g. Iterator itr = arrayList.iterator();
+           while(itr.hasNext()){
+            Object obj = itr.next();
+            itr.remove();
+           }
+        hasNext: returns boolean value true if elements are there in the collection else returns false
+        next: gets the element and moves the cursor to the element
+        remove: removes the element from the collection
+
+2. ListIterator [This cursor is used to read elements from List implementing classes]
+3. Enumerator [ This is only for legacy classes such as Vector, Stack, Hashtable]
+
+** Comparable **
+- It is used for natural sorting order.
+- We can sort basis on single field.
+
+## How to sort a list?
+- We use Collections.sort(list);
+- for sorting, list elements must be of same type.
+- All wrapper classes and String implements Comparable(I) which means compareTo is overridden.
+    - That's the reason we can sort list of integers with Collections.sort(list);
+- Comparable contains compareTo(T t);
+
+## How do we sort custom objects list? Sort list of employees ?
+- We can make the Employee class of type Comparable by implementing.
+- Then give override to compareTo() method and specify the logic on which sorting should take place
+- compareTo method returns 0, +, -.
+
+## How to do multiple field sorting? Comparator(I) - compare()
+- We use it for custom sorting on multiple fields.
+- We do not modify the existing class.
+- We write separate class of type Comparator and provide its object to Collections.sort(list, objTypeComparator);
+
+
+
+
+
+
+
+
+
+
+

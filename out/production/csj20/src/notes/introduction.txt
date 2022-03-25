@@ -1,0 +1,169 @@
+Variable : It is a name give to a memory location address
+Use of variable: To access the data stored or store the data at the memory location
+How to use it? int number = 50; // In this number is variable
+
+Datatype:
+    1. It specifies type of data that is being stored in variable
+    2. It specifies the memory requirement
+    3. It specifies the range of allowed values
+
+Different data types available in java
+1. To store whole numbers
+    byte --- 1 byte -- range -128 to 127
+    short -- 2 bytes  range -32768 to 32767
+    int -- 4 bytes range  -2147148
+    long  -- 8 bytes
+2. To store decimal or floating numbers
+    float -- 4 bytes
+    double  -- 8 bytes
+3. To store character data
+    char -- 2 bytes
+4. To store boolean value
+    boolean -- 1 byte , true, false
+
+Typecasting: It is a process of assigning one data type value to another data type value.
+Types of typecasting:
+    1. Implicit typecasting:
+        - Whenever we assign a smaller data type value to a bigger datatype value
+        - e.g. byte b1 = 50;
+             int a = b1;//implicit typecasting
+        - This is done automatically by the compiler.
+        - There will not be any data loss.
+    2. Explicit typecasting:
+        - whenever we assign a larger data type value to another smaller datatype value
+        - e.g. int a = 130;
+                byte b = (byte)a;
+                SOP(b);//
+        - This has to be done by developer.
+        - There might be data loss.
+
+Arithmetic Operators:
++, -, *, /, %
+
+1. + operator:
+    - string concatenation operator: when one of the operand is of String type.
+    - mathematical addition: when both the operands are of number type.
+
+Expression evaluation: left to write by following BODMAS
+
+Arithmetic Operators are not applicable for boolean data type
+
+
+2. Comparison or Relational operators: >, <, >=, <=,==, !=
+byte, short, int, long, float, double, char: >, <, >=, <=,==, !=
+boolean data type : ==, !=
+Output: boolean value
+
+3. Assignment operator :
+= which is used to assign RHS side to lhs.
+int a = 50;
+
+LHS must be a variable.
+RHS can be value, variable, expression, method call
+
+System.out.println(4=5);//CTE
+System.out.println(a=5);//5
+
+
+4. Logical Operators
+    &, &&, |, ||, ^, !,
+  For boolean what is applicable: &, &&,|,||, !,^
+
+All logical operators are applicable for boolean.
+Number type: &, |, ^
+There is no keyword like this AND, OR, XOR, NOT, NOR
+
+Unary Operators: no. operand is only one
+Binary Operators: no. operands are two
+Ternary Operators: no. of operands are three
+
+
+Difference between & , &&:
+& is both logical and bitwise operator
+& evaluates all the conditions and at last gives ouput
+
+&& is truly logical. It is applicable for boolean
+It returns the output when we get the first false.
+
+
+| is both logical and bitwise operator
+| evalutes all the conditions and at last gives ouput
+
+|| is trully logical. It is applicable for boolean
+It returns the output when we get the first true
+
+----------------------------------------------------------
+
+Pre-Increment and Post-Increment ++
+Pre-Decrement and Post-Decrement --
+
+These are unary operators.
+
+Pre Increment will increase the value by 1 and then it will be used for assignment or for any other operation
+
+Pre Decrement will decrease the value by 1, and then it will be used for assignment or for any other operation
+
+Post Increment will assign or do the operation then increase the value by 1
+
+Post Decrement will assign or do the operation then decrease the value by 1
+
+-----------------------------
+
+Bitwise operators
+&,|,^, <<, >>, >>>, ~
+
+
+Ternary Operator: conditional operator
+- Ternary operator works on three operands
+- It takes input as a boolean type data.
+- Based on the input it returns the value.
+- syntax: (op1) ? (op2) :(op3)
+- This is the only ternary operator in java
+
+As part of condition (operand1):
+- We can provide direct boolean value true or false.
+- We can write an expression which results into boolean
+- We can call a method which returns boolean value.
+
+Arithmetic operations resultant output:
+
+byte, short, int, char [+, -, *, /, %] byte, short, int, char ---> int
+
+byte, short, int, char, long [+, -, *, /, %] byte, short, int, char, long ---> long
+
+byte, short, int, char, long,float [+, -, *, /, %] byte, short, int, char, long,float ---> float
+
+byte, short, int, char, long,float, double [+, -, *, /, %] byte, short, int, char, long,float, double ---> double
+
+
+Identifier:
+
+It is a name given to a java method, variable, class, package, interfaces, abstract classes
+
+Rules:
+1. Set of characters include, A-Z, a-z, 0-9, _, $
+2. Identifier should not start with digit,
+    e.g. int 1number; //CTE
+3. Keywords or reserved words cannot be used as identifier.
+        e.g. int int = 10;//CTE
+        // public, static void, byte, short, int, long, float, double, char, boolean, class...
+4. Suggestion: We should not use pre-defined classes, interfaces, methods name as an identifier.
+    - We do not get any compile time error but reduces the readability of the code.
+5. Naming conventions:
+    a. upper camel case :
+        - classes, interfaces, abstract classes
+        - e.g. class MessageService{}
+    b. lower camel case
+        - variables, methods, packages
+        - e.g. void checkEligibility(){}
+        - e.g. int studentRollNumber = 1;
+
+
+
+
+
+
+
+
+
+

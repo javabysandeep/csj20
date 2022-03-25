@@ -1,0 +1,13 @@
+1. Java program to Count Number of Duplicate Words in String
+2. Java Program to Count Number of Words in Given String
+3. Java Program to Count the Number of Occurrences of Substring in a String
+4. Java Program to Count the Occurrences of Each Character in String
+5. Java Program to Merge two String Array
+6. Java Program to Remove Duplicate Words from String
+7. Java Program to Reverse a String(5 ways)
+8. Java Program to Reverse Each Word of a String
+9. Java Program to Swap Two Strings
+10. How to Check if the String Contains only Digits
+11. How to Check if the String Contains only Letters
+12. How to Check If the String Contains Only Letters or Digits
+13. Java Program to Check if Input String is Palindrome

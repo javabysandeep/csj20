@@ -1,0 +1,82 @@
+What is an Array?
+- Collection of multiple elements which are of same type and those elements are stored in continuous memory
+- With array we can hold multiple values of same data type.
+
+How to create an array?
+ datatype arrayName[] = new datatype[sizeofArray];
+ e.g. int array[] = new int[10]; // declaration+ initialization
+ e.g. int arr[] = {10,20,30,40,50};
+
+- Array is internally treated as an object.
+e.g. int arr[] = new int[10];
+[] denotes it is an array type variable.
+- we do not specify anything inside left side []
+- when we create an array an object is created.
+- Inside that object array size variables will be created and will be initialized with default value
+
+# How to access the array elements?
+- we access the array element with index.
+- index starts from 0 and till array length-1
+e.g. int[] array = {1,3,4,6};
+    SOP(array[0]);
+
+
+Why array index starts from zero?
+- array variable points to the base address where all elements are stored sequentially.
+- first element : baseAddress + dataTypeSize * 0
+- second element: BA + dataTypeSize * 1
+
+int a,b= 10;
+
+int[] a, b;// a and b are array type
+int a, b[];// a is int and b is array type
+int []a, b; // both a and b are array type
+int []a, b=10; //  a is array and b is int
+int a, b[], c,d; //   b is array, a,c and d are int type
+
+
+# single dimension: single row
+
+
+# multi dimension: multiple rows
+
+
+e.g. name, Marks
+
+     Akash  64
+     Guru   60
+     Manjusha 66
+     Sourabh  65
+     Saatvik 75
+     Shanteshar 63
+     Shubham  57
+     Swpanil 53
+     Vaishnav  82
+     Sanket 89
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

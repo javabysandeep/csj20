@@ -1,0 +1,102 @@
+1. Create an abstract class Instrument which is having the abstract function play.
+Create three more sub classes from Instrument which is Piano, Flute, Guitar.
+Override the play method inside all three classes printing a message .
+“Piano is playing tan tan tan tan ” for Piano class
+“Flute is playing toot toot toot toot” for Flute class
+“Guitar is playing tin tin tin ” for Guitar class
+You must not allow the user to declare an object of Instrument class.
+Create an array of 10 Instruments.
+Assign different type of instrument to Instrument reference.
+Check for the polymorphic behavior of play method.
+Use the instanceof operator to print that which object stored at which index of instrument array.
+
+
+2. Create a class Medicine to represent a drug manufactured by a pharmaceutical company. Provide a function displayLabel() in this class to print Name and address of the company.
+Derive Tablet, Syrup and Ointment classes from the Medicine class. Override the displayLabel() function in each of these classes to print additional information suitable to the type of medicine. For example, in case of tablets, it could be “store in a cool dry place”, in case of ointments it could be “for external use only” etc.
+Create a class TestMedicine . Write main function to do the following:
+Declare an array of Medicine references of size 10
+Create a medicine object of the type as decided by a randomly generated integer in the range 1 to 3.
+Refer Java API Documentation to find out random generation feature.
+Check the polymorphic behavior of the displayLabel() method.
+
+3. Create an abstract class shape with abstract method
+void area();
+
+create 4 more classes circle, cylinder, square and rectangle
+
+shape
+
+circle square
+
+cylinder rectangle
+
+Override the area() in all the classes
+Create an array of references of type shape in TestShape class and print the area of different types of shapes.
+---------------------------------------------------------------
+
+#### Interface assignment:
+
+1. Create an interface relational
+interface relational
+{
+void greaterThan();
+void lessThan();
+void greaterThaneq();
+void lessThaneq();
+}
+Write an implementing class implRel which implements realational
+class implRel implements relational
+{
+int a, b;
+implRel(int a,int b)
+{
+this.a=a;
+this.b=b;
+}
+- - - -
+- - - -
+}
+
+Create a class relationdemo .In main create an object of implRel (implementing class)
+and invoke all the methods …
+
+1. Create an interface
+interface MyMath
+{
+double sqr(double a);
+double cube(double a);
+double cosine(double a);
+double sine(double a);
+}
+Write a class implMath which implements MyMath interface.
+Write another class MathDemo ..In main create a reference of MyMath pointing to implMath class and invoke the methods..Accept the values from the user..
+
+2. Create a package com.user .
+Now create a Greeter class in this package having the following features:
+Attributes:
+name string //indicates name of the person to be greeted
+Member functions:
+Greeter(aName) //constructor to initialize the name of the //person to be greeted by this greeter.
+sayHello() //returns a hello message with the name of the //person initialized earlier.
+sayGoodBye() //bids goodbye to the person named earlier.
+Create another class in the same package called Advisor that has the following features:
+Attributes:
+message string[5] //contains five advice messages
+Member functions:
+Advisor() //default constructor to initialize an array of //strings with atleast five advice messages
+getAdvice() //randomly selects an advice from the available //list of messages and returns it to the caller of //this method
+Outside the package, from your working directory, create a class GreeterTest that constructs Greeter objects for all command-line arguments and prints out the results of calling sayHello().
+The program should then display an advice and finally bid goodbye to each of the persons/entities in reverse order of the names entered at the command line.
+For e.g.,
+java GreeterTest Mars Venus
+then the program should print
+Hello, Mars!
+Hello, Venus!
+Advice: Never say No
+Goodbye Venus!
+Goodbye Mars!
+
+
+
+
+

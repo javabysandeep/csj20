@@ -1,0 +1,62 @@
+1. Write a program to check whether the given number is even or odd
+2. Write a program to check whether the given number is positive or negative.
+3. Write a program to find a big number in given 3 numbers.
+4. Write a program to check whether the given character is a vowel or not.
+5. Write a program to check whether the user is eligible for voting or not
+6. Write a program to check whether the given number is a multiple of 5 or not
+7. Write a program to check whether the given character is alphabet or not
+8. Write a program to find bill amount according to the following information
+Amount Discount
+<5000 10%
+>=5000 and <10000 15%
+>=10000 and <20000 20%
+>=20000 50%
+take qty, rate and calculate amt, dis and final bill
+
+9. Write a program to perform all arithmetical operations using switch-case
+10. Write a program to find whether the given character is vowel or not using a switch-case.
+11. Write a program to perform all arithmetical operations using switch-case by taking arithmetical operator.
+12. Write a program to display the month name for a given month number
+13. Write a program to display the season of the given month
+
+
+For loop
+
+1 write a program to find the sum of n numbers
+2. write a program to find the sum of first n even numbers
+3. write a program to print a mathematical table of a given number
+4. write a program to find factorial of the given number
+6. write a program to check whether the given number is a prime number or not
+7. write a program to calculate the sum of 1-100 numbers
+8. write a program to print 1-100 Even numbers without using the % operator
+9. write a program to print 1-100 in reverse order
+10. write a program to print power of given 2 numbers
+11. write a program to print 1-10 numbers using while loop
+12. write a program to find whether the given number is a perfect number or not
+13. write a program to find the sum of the digits of a given number
+14. write a program to check a given number Armstrong number
+16. write a program to find the multiplication of 2 numbers without *using operator
+17. write a program to find the division of 2 numbers without using /,% operators and print quotient and the remainder
+18. write a program to print perfect number in the range of 1-1000
+19. check palindrome.
+20. Reverse a number
+
+Roman Number System:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

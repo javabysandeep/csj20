@@ -1,0 +1,222 @@
+1. Define String
+- String is a predefined class present inside the java.lang package.
+- It is used to represent group of characters.
+- Internally string class maintains the array of characters.
+
+2. In How many ways we can store string data?
+- using string object
+- using array of chars
+
+3. Why String class is given when char array is already available?
+- Storing the group of characters with array of chars,
+    - is difficult and time-consuming.
+    - no method support
+    - arrays are fixed in nature
+
+4. What are the different ways to construct String object?
+- we can create string objects in two ways.
+- using new keyword.
+    e.g. String str = new String("some value");
+- by using literal way
+    e.g. String str = "some value";
+
+5. What is the difference in String object creation from the String literal and the constructor?
+- using new keyword:
+    - string object will be created inside the HEAP without checking the content.
+    - string object will be also created inside the SCP, but it is optional.
+    - If the object is already present inside the SCP then we get reference of the existing object.
+    - reference will point to the object in heap.
+
+- using literal way:
+    - string object will be created inside the SCP, but it is optional.
+    - If the object is already present inside the SCP then we get reference of the existing object.
+    - String objects will not be created inside the HEAP.
+    - reference will point to the object in SCP.
+
+
+6. String Pooling
+
+7. What is immutable and why String objects are immutable?
+Ans. We cannot modify.
+
+8. What do you mean by immutable class and mutable objects?
+Ans.
+- Immutable class
+    - make the final
+    - make data members private
+    - do not provide any setters
+- If a class is immutable, we cannot change the state of class.
+- Mutable objects state can be changed.
+- String objects are immutable.
+- Once the string is created we cannot modify it.
+
+9. Can we develop immutable object?
+Ans. Yes we can.
+- make the final
+- make data members private
+- do not provide any setters
+
+10. Why StringBuffer class is given when we have String class to Store String data?
+Ans. Because,String objects are immutable and StringBuffer objects are mutable
+
+11. Why StringBuilder class is given when we have String, StringBuffer class to Store String data?
+Ans. StringBuilder is faster as it is not thread safe.
+
+12. Is String thread safe?
+Ans. Yes it is. Every immutable object is thread safe. As value cannot be changed.
+
+13. String vs StringBuffer vs StringBuilder
+Ans.
+    1. Immutability : String is immutable. StringBuffer and StringBuilder are mutable
+    2. Thread safe : String, StringBuffer
+    3. cannot be modified : String
+    4. equals method overridden  : String
+    5. Object creation with literal way: String
+    6. String Constant pool is restricted for String class not for StringBuffer and StringBuilder.
+
+14. Can we assign String literal directly to StringBuffer or StringBuilder type variables?
+Ans. No. Literal way string object creation is possible only for String objects.
+
+15. Printing String object.
+Ans. As toString() method is overridden inside the String class so it will print the content and not the hashcode
+
+16. How can we find length of the String?
+Ans. by using length() method
+
+17. what is the difference between length & length()?
+Ans.
+    - length() method returns the length of the String.
+    - length is variable which returns the size of an array.
+
+18. The limitation of String class.
+Ans. - String class is immutable. So it cannot be modified. So it is expensive to create to ne w objects.
+
+19. Concatenation, how Strings can be concatenated?
+Ans.
+    - using + operator
+    - by using concat method
+
+20. Convert String case
+Ans.
+    - toLowerCase
+    - toUpperCase
+
+21. How can we replace a character or substring in the given String?
+Ans.
+    - replace(oldChar, newChar)
+    - replace(oldString, newString)
+    - replaceFirst(target) -- first occurrence will replace
+    - replaceAll() ---replaces all the strings
+
+22. How can we trim string leading and trailing spaces?
+Ans.
+    - trim()
+
+23. How String Objects must be compared for equality?
+Ans.
+    - reference check ==
+    - equals method -> content check
+
+24. What do meant by comparing string objects lexicographically, how it can be done?
+Ans. --> compareTo()
+
+25. How can we read characters from the String?
+Ans. - we can read single character with charAt(index).
+
+26. How can we find the position of a character or sub-string?
+Ans. By using indexOf() method
+
+27. Finding string startsWith or endsWith
+Ans.
+    - startsWith() method returns boolean if the string starts with given string
+    - endsWith()
+
+28. Splitting string into tokens
+Ans.
+    - str.split(delimiter); str.split(' ');
+
+29. What are the different operations we can't perform on string using String object?
+Ans. reverse(), append, delete, insert
+
+30. Define **StringBuffer**
+Ans.
+    - StringBuffer is a class defined inside the java.lang which represents group of characters
+    - It is mutable. Existing object can be modified.
+    - it is Thread Safe. Methods inside the StringBuffer are synchronized.
+    - equals method is not overridden.
+    - It is slower than compared to StringBuilder
+    - StringBuffer objects are stored inside the heap memory area.
+
+31. When to use StringBuffer class?
+Ans. - As StringBuffer objects are mutable.
+     - Thread safety.
+
+32. What are the special operations can be performed on StringBuffer, those cannot be applied on String?
+33. Ways of creating StringBuffer object creation?
+Ans.
+    - Only one way i.e. by using new keyword
+    - literal way object creation is not applicable for StringBuffer and StringBuilder
+
+34. Append, Insert, Delete, reverse and overriding characters in the StringBuffer.
+35. Finding StringBuffer capacity and length
+36. Controlling StringBuffer capacity
+37. Ways of Converting String to StringBuffer and vice versa
+
+
+# String class methods:
+  public java.lang.String substring(int);
+  public java.lang.String substring(int, int);
+  public java.lang.CharSequence subSequence(int, int);
+  public java.lang.String concat(java.lang.String);
+  public java.lang.String replace(char, char);
+  public boolean matches(java.lang.String);
+  public boolean contains(java.lang.CharSequence);
+  public java.lang.String replaceFirst(java.lang.String, java.lang.String);
+  public java.lang.String replaceAll(java.lang.String, java.lang.String);
+  public java.lang.String replace(java.lang.CharSequence, java.lang.CharSequence);
+  public java.lang.String[] split(java.lang.String, int);
+  public java.lang.String[] split(java.lang.String);
+  public static java.lang.String join(java.lang.CharSequence, java.lang.CharSequence...);
+  public static java.lang.String join(java.lang.CharSequence, java.lang.Iterable<? extends java.lang.CharSequence>);
+  public java.lang.String toLowerCase(java.util.Locale);
+  public java.lang.String toLowerCase();
+  public java.lang.String toUpperCase(java.util.Locale);
+  public java.lang.String toUpperCase();
+  public java.lang.String trim();
+  public java.lang.String toString();
+  public char[] toCharArray();
+  public static java.lang.String format(java.lang.String, java.lang.Object...);
+  public static java.lang.String format(java.util.Locale, java.lang.String, java.lang.Object...);
+  public static java.lang.String valueOf(java.lang.Object);
+  public static java.lang.String valueOf(char[]);
+  public static java.lang.String valueOf(char[], int, int);
+  public static java.lang.String copyValueOf(char[], int, int);
+  public static java.lang.String copyValueOf(char[]);
+  public static java.lang.String valueOf(boolean);
+  public static java.lang.String valueOf(char);
+  public static java.lang.String valueOf(int);
+  public static java.lang.String valueOf(long);
+  public static java.lang.String valueOf(float);
+  public static java.lang.String valueOf(double);
+  public native java.lang.String intern();
+  public int compareTo(java.lang.Object);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

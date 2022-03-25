@@ -1,0 +1,248 @@
+Primitive variable: A variable which holds a primitive value.
+    int a =30;
+    // a is primitive variable
+    // int is type of value
+    // 30 is value
+
+Reference variable: A variable which holds reference/address of an object.
+    e.g. Product product = new Product();
+        // product : reference variable which holds address of an object of type Product
+        // new Product():  this is object of type of Product
+        // Product: it is type which specifies the type of object
+
+- class:
+    - it is keyword which is used to create a class/ category/ group
+    - it is derived from the word classification.
+    - class is a blueprint/ template, structure, layout, plan, design, derived data type to create an object
+    - Why do we need? to create objects
+    - How to create class: class ClassName {}
+    - With single class we can create any no. of objects.
+
+    class contains
+        - state/attributes/variables/properties/data/info/columns/fields/
+        - behaviour/methods/functions/procedure/routine/implementation/
+
+- Object:
+    - it is an instance of class.
+    - instance is an any memory space allocated.
+    - Object is a memory space allocated for the class type data.
+    - Why do need an object? to store data.
+    - How to create an object?
+        - syntax: ClassName referenceVariableName = new ClassName();
+        - Product product = new Product(); // RHS is an object
+
+#Variable:
+    #. Based on the value:
+        1. Primitive variable
+        2. Reference variable
+
+    #. based on the memory it occupies
+        1. Local variable
+            ---> Variables which are created inside the method,method parameter, constructor or blocks,
+            --> Stack memory
+            - Local variable will get the memory when the method, block, constructor is called.
+            1. Local Primitive variable
+            2. Local Reference variable
+        2. Instance Variable [ object specific]
+            --> Variables which are created at class level outside
+                all methods, constructors,blocks
+                without static keyword are called as instance variables.
+            --> Heap Memory area
+            1. Instance Primitive variable
+            2. Instance Reference variable
+            - instance variables are used to store object specific data.
+            - instance variable will get the memory every time we create an object.
+            How to access instance variables?
+            Ans. We need a reference to access the heap memory area.
+            e.g. Product p = new Product();
+                    p.productId, p.productName
+
+        3. Static variables
+             -- class or method memory area
+            --> Variables which are created at class level outside
+                  all methods, constructors,blocks
+                     with static keyword are called as static variables.
+            1. static Primitive variable
+            2. static Reference variable
+        - static variables are used to store common data for all objects.
+        - static is used share data across all objects.
+        - static variable gets the memory only once at the time class loading.
+        - How to access static variables?
+            By using className.
+            ClassName.staticVarName
+
+class components
+    - variables
+        - reference
+        - primitive
+        - final
+        - local
+        - instance
+        - static
+    - methods/functions/procedure/routine/behaviour/implementation/task
+        What is it?
+            - It is a group of statements which are enclosed inside the {}.
+            - It has a name also.
+            - Method can accept input via method parameters
+            - Method can return output also via return statement.
+        Why to use?
+            - to achieve code reusability
+            - we can apply access specifiers so we can secure the code.
+       How to use?
+            syntax: accessSpecifier returnType methodName(method params){
+                //statements
+                // optional return
+            }
+            public static void main(String[] multipleStrings){
+                //statements
+            }
+       - Types of methods
+        - instance methods :
+            - are object specific
+            - How to access: by using reference since it belongs to object
+
+            - e.g. float getBalance(){
+                    return balance;
+                }
+                Account ac = new Account();
+                ac.getBalance();
+
+        - static methods :
+            - common for all
+            - by using className we access it.
+
+            e.g. static void print(Object obj){
+                    SOP(obj);
+                    }
+
+                    Account.print(null);
+
+
+        - default methods
+        - abstract methods
+        - final methods
+
+       - constructors
+            - What is it?
+                - It is a method which has same name as of class name without any return type or access modifiers[final, static, abstract]
+                e.g. class Student{
+                        public Student(){
+                           // statements
+                        }
+                    }
+            - Why do we need?
+              - These are used to construct to the object.
+              - Initialization:  providing some initial value for instance variables.
+              - constructing the object means providing some initial value for the object state.[instance variables]
+              - Use of Constructor: to provide some initial value for instance variables only not for local or static variable.
+            - How to the use constructor?
+                e.g. class Student{
+                        int rollNumber;//0
+                        String name; //null
+                       public Student(){
+                        rollNumber = 30;
+                        name = "dummy";
+                        System.out.println("constructor");
+                       }
+                    }
+                 Student student = new Student();
+
+    # Types of constructor:
+        - default constructor:
+                - As a developer, if we do not provide any constructor then java compiler provides the default constructor.
+                - but if developer provides any constructor then default constructor will not be provided by the java compiler.
+                - default constructor does not accept input. zero params, and it does not have any implementation/code inside the constructor body.
+        - zero param: it is developed by developer which does not accept any parameter
+        - parameterized: it is developed by developer which accepts the parameters.
+
+    # Blocks ---->
+    1. instance blocks
+    What: it is a block of code enclosed in curly braces at class level without any modifiers
+    Why: It is used to perform non-initialization activity such as maintaining the counter, logging, auditing
+    How: {
+            //block of code
+        }
+    When: Every time object is created the instance block will be called.
+
+    2. static block
+    What: it is a block of code enclosed in curly braces at class level with static keyword
+    Why: It is used to perform onetime activity such as database connection, loading the drivers, loading server configuration
+    How: static {
+            //block of code
+        }
+    When: It will be called only once at the time of class loading.
+    ------------------------------
+    Order of execution:
+        Static block
+        Instance blocks
+        constructors
+--------------------------------------------------------------------
+# this keyword
+    - what is it?
+        - It is a keyword and which is reference variable which points to the current class object.
+    - why do need it?
+        - since it ie being a reference to the current class object, we can access the current class object, instance variable, instance method
+        - When local variable and instance variable have the same, then to differentiate between them, we use this keyword.
+        - With this keyword, we can call the same class constructor from another constructor of the same class.
+            - we can't call more than one constructor from a given constructor.
+            - call to the constructor must be the first line of code inside the constructor. otherwise, we get the CTE.
+        - with the help of this, we can the current class object reference.
+        - with the help of this, we can pass the current class object reference as a method parameter.
+
+    - How to use it?
+        this();
+        this.iv;
+        this.instanceMethod();
+
+    - nested class : A class defined inside another class
+        - local inner class
+            - A class defined inside the method.
+            - We define the class inside the method and we use it inside the method.
+            - As part of local inner class,
+                - we can't have static variable, static methods, static block, static class
+
+        - non-static i.e. inner class
+           - A class defined inside the class without static keyword.
+           - As part of  inner class,
+               - we can't have static variable, static methods, static block, static class
+
+        - static nested class
+             - A class defined inside the class with static keyword.
+             - As part of  static nested class,
+             - we can have all components: static as well as non-static members.
+        - anonymous class
+OOPS
+- Access specifiers
+    - what is it?
+      - These are the specifiers which specifies the access level of different class components
+    - why to use
+       - To specify, restrict the access to the class components
+    - What are the different access specifiers?
+       private: accessible within only same class
+       public : accessible throughout the app
+       default: accessible within only same package
+       protected: accessible within only same package plus child classes in diff. package
+*** Outer class can't be private, protected, static
+
+- Encapsulation
+    - We bind data and methods acting on it as single unit.
+    - We make data members private and access them by using public getters and setters method
+    - We use encapsulation to achieve better control on data and data security.
+
+    - Inheritance
+        - what is it
+        - why to use
+        - how it uses
+        - types
+        - super keyword
+    - Polymorphism
+        - method overloading
+        - method overriding
+    - Abstraction
+        - concrete methods
+        - concrete class
+        - abstract method
+        - interfaces
+            - marker
+            - functional
+            - lambda expression

@@ -1,0 +1,97 @@
+Multitasking: Doing multiple task at the same time.
+
+Process: a program in execution
+
+Context: it is a process
+
+Multiprocessing:
+- executing multiple process at the same time.
+- it happens at operating system level.
+
+Context switch: switching from one process to another process by saving the metadata regarding the process
+
+Multithreading:
+- Executing multiple tasks at the same time at program level.
+- Threads are independent executions.
+- Threads share the common memory of process.
+- Thread switch is less expensive as compared to context switch.
+
+Thread Scheduler:
+- It is program which decides the thread execution schedule.
+- Threads has to be registered with thread scheduler
+- To make any piece of code, as thread we have to use classes and interfaces provided by java.
+
+# Thread
+- it is class present in java.lang package
+- Thread is piece of code
+- Task
+- it is independent flow of execution within the process
+
+# Constructors of Thread class
+  public java.lang.Thread();
+  public java.lang.Thread(java.lang.Runnable);
+  java.lang.Thread(java.lang.Runnable, java.security.AccessControlContext);
+  public java.lang.Thread(java.lang.ThreadGroup, java.lang.Runnable);
+  public java.lang.Thread(java.lang.String);
+  public java.lang.Thread(java.lang.ThreadGroup, java.lang.String);
+  public java.lang.Thread(java.lang.Runnable, java.lang.String);
+  public java.lang.Thread(java.lang.ThreadGroup, java.lang.Runnable, java.lang.String);
+  public java.lang.Thread(java.lang.ThreadGroup, java.lang.Runnable, java.lang.String, long);
+
+What are the different ways to create a Thread?
+1. by extending Thread class
+    - drawback we can't extend other Thread class.
+2. by implementing Runnable interface
+    - This is recommended as we have option of extending one more class.
+
+- For every java application there is one thread created by JVM that is main.
+- Task of the main thread is written inside the main method.
+
+Methods of Thread class:
+- setName("Thread name")
+- getName()
+- Thread.currentThread(): it returns the reference of currently executing thread
+- setPriority(priorityInteger)
+    - In thread class three constants are there to represent priority
+    - these are static final
+    - MIN_PRIORITY[1]
+    - NORM_PRIORITY[5]
+    - MAX_PRIORITY[10]
+   - If we specify the priority out of range[1-10] then we get IllegalArgumentException
+- start(): this is used to register the thread with Thread scheduler.
+    - We cannot start the thread twice otherwise we get IllegalThreadStateException
+# Different methods to  prevent thread execution
+- Thread.sleep(timeInterval);
+- join
+- yield
+    - It is just a hint to the Thread scheduler that currently executing thread is willing to give up the execution for all the threads which are having same or higher priority
+    - But it is thread schedulers decision to take this up.
+
+# Thread life cycle
+[New/Born State (Thread t = new Thread(task))] -> [Ready/runnable (t.start())] -> [Running (run().. is running)] --> [Dead/Complete/terminated (run is completed)]
+                                            |
+                                            |
+                                 [Waiting/Sleeping/Blocked (sleep, join, yield, wait)]
+
+ # synchronized
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

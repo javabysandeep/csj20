@@ -1,0 +1,99 @@
+- concrete method: a method with method body/ implementation
+- concrete class: a class which contains only concrete methods
+- abstract method: a method created with abstract keyword without method body/implementation
+- abstract class: a class which can contain abstract methods
+- abstraction: it is a process of hiding the implementation details[method body] and exposing the functionality[method declaration]
+- How do we achieve abstraction?
+    - abstract class
+    - interface: it is a fully unimplemented class which contains only abstract methods[ incomplete methods]
+
+
+#Abstract class
+- we create abstract class with abstract keyword.
+- We can have all components of concrete class plus abstract methods inside the abstract class
+- We can't create the object of abstract class since it is declared abstract[incomplete].
+- when one concrete class extends another abstract class, then it is compulsory for the child class to provide the implementation.
+- when one abstract class extends another abstract class, then it is optional for the child class to provide the implementation.
+
+Q. How to call the abstract class constructor?
+A. We create the concrete child class and extend abstract class
+   then with child class object creation internally child class constructor calls the parent class abstract
+
+# if we try to create an objet of an abstract class or interface then we get compile time exception: InstantiationException
+#################*********************
+We cannot use abstract and final together.
+We cannot use abstract and private together.
+We cannot use abstract and static together.
+#################*********************
+
+#Interface:[incomplete]
+- It is a class which is fully unimplemented class.
+- We use interface keyword to create an interface.
+- It contains all methods by default abstract.
+- Since it is an incomplete class, we can't create the object of an interface.
+
+** By default methods inside the interface are public abstract.
+Q. Why constructor is not allowed inside the interface?
+Ans.
+    - We cannot apply any modifier on constructor.
+    - By default methods inside the interface are public abstract.
+    - public abstract is applied to all methods including constructor.
+
+Q. What all things we cannot have as part of an interface?
+    - concrete methods that are instance methods.
+    - final methods
+    - constructor
+    - instance block
+    - static block
+    - instance variables.
+    - private methods
+-- By default variables are public static final.
+
+Q. What all things we can have as part of an interface?
+1. abstract methods
+2. static methods
+3. default methods
+4. nested class: static
+5. variables: static variables,
+
+Q. can we write main method inside the interface?
+A. Yes we can write.
+
+- One class extends another class
+- one class implements another interface
+- One interface extends another interface
+
+- Invalid combination:
+    class A extends InterfaceA{}
+    interface B implments InterfaceA{}
+
+***
+- when one concrete class implements another interface, then it is compulsory for the child class to provide the implementation.
+- when one abstract class implements another interface, then it is optional for the child class to provide the implementation.
+
+# Marker interface: An empty interface it is called as marker interface.
+
+# Functional interface:
+- An interface which contains only one abstract method.
+- It may contain any nuo. of static methods or default methods.
+
+Conclusion:
+1. variables are by default public static final
+2. methods are by default public abstract
+3. classes are by default public static.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
